@@ -1,0 +1,35 @@
+.new {
+    padding-top: 69px;
+    background: url("../img/new_promo.jpg") center center / cover no-repeat;
+    display: flex;
+    justify-content: space-between;
+    a {
+        color: #ffffff;
+    }
+    &__body {
+        margin-top: 79px;
+    }
+    &__title {
+        font-size: 36px;
+        color: #fff;
+        max-width: 430px;
+    }
+    &__descr {
+        @include descr;
+        color: #fffefe;
+        margin-top: 19px;
+        max-width: 470px;
+    }
+    &__img {
+        img {
+            display: block;
+        }
+    }
+    .store-link {
+        &:hover {
+            border-color: #383838;
+            background-color: #383838;
+        }
+    }
+
+}

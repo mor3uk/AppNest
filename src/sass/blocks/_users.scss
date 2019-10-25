@@ -1,0 +1,59 @@
+.users {
+    padding-top: 87px;
+    padding-bottom: 87px;
+    background: url("../img/users_promo.jpg") center center / cover no-repeat;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-left: 55px;
+        padding-right: 55px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 2px dashed #ffffff;
+        border-radius: 12px;
+        transform: rotate(-30deg);
+        width: 200px;
+        height: 255px;
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            width: 63px;
+            height: 2px;
+            background-color: #fff;
+            position: absolute;
+            top: 185px;
+            right: -60px;
+            transform: rotate(30deg);
+        }
+        &:nth-child(4):after {
+            content: "";
+            display: none;
+        }
+    }
+    &__text {
+        margin-top: 15px;
+        color: #fefefe;
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+        span {
+            margin-bottom: 5px;
+            font-size: 48px;
+            font-weight: 700;
+            display: block;
+        }
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: rotate(30deg);
+    }
+}

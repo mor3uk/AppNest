@@ -1,0 +1,47 @@
+.feedback {
+    padding-top: 135px;
+    padding-bottom: 135px;
+    text-align: center;
+    &__descr {
+        margin: 29px auto 0 auto;
+        @include descr;
+        max-width: 480px;
+    }
+    &__clients {
+        margin-top: 76px;
+    }
+    &-client {
+        padding: 52px 45px 45px 45px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include shadow;
+        &__name {
+            margin-top: 27px;
+            color: #00cff1;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        &__company {
+            margin-top: 8px;
+            font-size: 18px;
+        }
+        &__descr {
+            @include descr;
+            margin: 35px auto 0 auto;
+            font-size: 18px;
+            font-style: italic;
+            max-width: 290px;
+        }
+        &__stars {
+            margin-top: 28px;
+        }
+        img {
+            width: auto !important;
+            display: inline-block !important;
+        }
+        &__img {
+            height: 90px;
+        }
+    }
+}

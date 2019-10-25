@@ -1,0 +1,14 @@
+@mixin descr {
+    color: #575757;
+    font-family: Raleway;
+    font-size: 15px;
+    line-height: 24px;
+}
+@mixin shadow {
+    transition-duration: 0.4s;
+    border: 2px solid rgba(0, 0, 0, 0.05);
+    &:hover {
+        box-shadow: 0 30px 60px rgba(0, 0, 0, 0.1);
+        border-color: #fff;
+    }
+}

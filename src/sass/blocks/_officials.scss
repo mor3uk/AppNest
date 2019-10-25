@@ -1,0 +1,80 @@
+.officials {
+    padding-top: 138px;
+    padding-bottom: 138px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        display: block;
+        width: 118px;
+        img {
+            width: 100%;
+        }
+    }
+    &__descr {
+        max-width: 350px;
+        margin-bottom: 35px;
+    }
+    &__body {
+        margin-top: 50px;
+        @include descr;
+    }
+    &__list {
+        li {
+            margin-bottom: 15px;
+        }
+    }
+    &__title {
+        color: #575757;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    &__links {
+        margin-top: 19px;
+        display: flex;
+        justify-content: center;
+    }
+    &__link {
+        display: block;
+        width: 35px;
+        height: 35px;
+        border-radius: 100%;
+        margin-right: 10px;
+        &:nth-child(1) {
+            background: url("../icons/facebook.svg") center center;
+        }
+        &:nth-child(2) {
+            background: url("../icons/twitter.svg") center center;
+        }
+        &:nth-child(3) {
+            background: url("../icons/instagram.svg") center center;
+        }
+        &:nth-child(4) {
+            background: url("../icons/linkedin.svg") center center;
+        }
+    }
+    &__form {
+        margin-top: 22px;
+        display: flex;
+        input {
+            border: 1px solid #d8d8d8;
+            border-radius: 30px 0 0 30px;
+            padding: 23px 26px;
+            width: 270px;
+            border-right: none;
+            color: #575757;
+        }
+        button {
+            border-radius: 0 30px 30px 0;
+            border: 1px solid #d8d8d8;
+            width: 100px;
+            background: url("../icons/plane.svg") center center no-repeat;
+            background-color: $mainGreen;
+            transition-duration: .4s;
+            &:hover {
+                background-color: $mainBlue;
+            }
+        }
+    }
+}

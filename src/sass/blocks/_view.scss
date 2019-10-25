@@ -1,0 +1,44 @@
+.view {
+    display: flex;
+    padding-right: 0 !important;
+    justify-content: space-between;
+    a {
+        color: #282828;
+        border-color: #282828;
+    }
+    & > div {
+        width: 50%;
+    }
+    &__video {
+        background: url("../img/video_promo.jpg") center center / cover no-repeat;
+        min-height: 542px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__button {
+        width: 90px;
+        height: 90px;
+        background: url("../icons/play_icon.svg") center center no-repeat;
+        border-radius: 100%;
+        transition-duration: 0.4s;
+        border: 20px solid #3dce8f;
+        &:hover {
+            background-color: #3dce8f;
+            box-shadow: 0 0 60px #33b37b;
+        }
+    }
+    &__body {
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+    }
+    &__descr {
+        margin-top: 20px;
+        max-width: 480px;
+        @include descr;
+    }
+    .title {
+        max-width: 400px;
+    }
+}

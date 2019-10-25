@@ -1,11 +1,24 @@
-h1, h2, h3, h4, h5, h6, ul, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
     margin: 0;
     padding: 0;
 }
 
-input, textarea, button {
+input,
+textarea,
+button {
     outline: none;
     border: none;
+}
+
+button {
+    cursor: pointer;
 }
 
 li {
@@ -14,4 +27,49 @@ li {
 
 a {
     text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.section {
+    padding-left: calc(50% - 590px);
+    padding-right: calc(50% - 590px);
+}
+
+.head {
+    background: url("../img/header_promo.jpg") center center / cover no-repeat;
+    padding-top: 57px;
+    padding-bottom: 80px;
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
+
+.blue {
+    color: $mainBlue;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+#body .owl-dots {
+    display: block !important;
+    margin-top: 60px;
+    .owl-dot {
+        width: 40px;
+        height: 7px;
+        border-radius: 8px;
+        background-color: #ebe9ff;
+        transition-duration: 0.5s;
+        margin: 0 5px;
+    }
+    .active {
+        width: 60px;
+        background-color: $mainBlue;
+    }
 }

@@ -1,0 +1,33 @@
+.store-links {
+    display: flex;
+    margin-top: 56px;
+}
+.store-link {
+    padding: 16px 21px;
+    border-radius: 7px;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 170px;
+    transition-duration: 0.4s;
+    &:first-child {
+        margin-right: 30px;
+    }
+    &:hover {
+        background-color: $mainGreen;
+        border-color: $mainGreen;
+        box-shadow: 0 10px 60px rgba(0, 0, 0, 0.3);
+    }
+    &__img {
+        width: 26px;
+        height: 29px;
+        margin-right: 10px;
+    }
+    &__body {
+        font-size: 9px;
+        span {
+            font-size: 16px;
+        }
+    }
+}

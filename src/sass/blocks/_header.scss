@@ -1,0 +1,38 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-link {
+            padding: 0 15px;
+            font-size: 16px;
+            text-transform: uppercase;
+            transition-duration: 0.4s;
+            &:hover {
+                color: $mainBlue;
+            }
+        }
+    }
+    &__logo {
+        width: 118px;
+        img {
+            width: 100%;
+        }
+    }
+    &__get-link {
+        padding: 24px 36px;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        border-radius: 30px;
+        border: 1px solid #ffffff;
+        transition-duration: 0.4s;
+        &:hover {
+            color: $mainBlue;
+            border-color: $mainBlue;
+        }
+    }
+}
